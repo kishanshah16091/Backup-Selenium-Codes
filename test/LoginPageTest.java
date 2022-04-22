@@ -8,10 +8,10 @@ public class LoginPageTest {
 
 
         BaseClass.openWithSpecificUrl("http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx");
-        LoginPage loginPage=new LoginPage();
+        LoginPage loginPage = new LoginPage();
         loginPage.username.sendKeys("Tester");
         loginPage.password.sendKeys("test");
         loginPage.loginButton.click();
-
+        BaseClass.tearDown();
     }
 }
